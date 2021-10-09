@@ -1,8 +1,6 @@
-import org.w3c.dom.ls.LSOutput;
-
 public class Calculator {
 
-    public static int addieren(int a, int b) {
+    public static int add(int a, int b) {
         return a + b;
 
     }
@@ -32,6 +30,7 @@ public class Calculator {
         boolean c = false;
         char d = 'f';
         String f = "hes";
+        System.out.println(divide(5,2));
 
         System.out.println(a);
         System.out.println(b);
@@ -41,18 +40,41 @@ public class Calculator {
 
         int cc = 5;
         int cd = 26;
-        System.out.println(cd%cc);
+        System.out.println(cd % cc);
 
-        int x = addieren(5,7);
+        int x = add(5, 7);
         System.out.println(x);
         System.out.println("x = " + x);
 
         System.out.println(printInvoiceAmount(5));
 
+    }
+        // Methode =>
+        public static double printInvoiceAmount ( double amount){
+            return amount;
+        }
+        public static String wenn ( int a){
+            if (a < 10) {
+                return ("ich bin kleiner");
+            } else {
+                return ("ich bin Groser");
+            }
+        }
 
-    }
-    // Methode =>
-    public static double printInvoiceAmount (double amount){
-        return amount;
-    }
+        public static int divide ( int dividend, int divisor){
+        if (divisor != 0) {
+            return (dividend / divisor);
+        }
+        else{
+
+              return 0;
+            }
+
+        }
+
+
+
+
 }
+
+
