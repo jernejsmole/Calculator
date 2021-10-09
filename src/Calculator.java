@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Calculator {
 
     public static int addieren(int a, int b) {
@@ -43,6 +45,14 @@ public class Calculator {
 
         int x = addieren(5,7);
         System.out.println(x);
+        System.out.println("x = " + x);
 
+        System.out.println(printInvoiceAmount(5));
+
+
+    }
+    // Methode =>
+    public static double printInvoiceAmount (double amount){
+        return amount;
     }
 }
